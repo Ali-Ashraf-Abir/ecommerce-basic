@@ -1,0 +1,29 @@
+.shop-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin-top: 50px;
+}
+
+.products-container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+
+    gap:10px
+    
+}
+
+
+@media only screen and (max-width:570px){
+    .shop-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 50px;
+    }
+    .products-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+        gap:10px
+        
+    }
+}

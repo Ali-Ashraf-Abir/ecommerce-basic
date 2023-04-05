@@ -1,0 +1,35 @@
+.single-product{
+    font-size: 20px;
+    background-color: rgb(49, 45, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.single-product p {
+    margin-top: 10px;
+}
+
+.product-img{
+    width:100% ;
+}
+.price-rating{
+    display:flex;
+    justify-content: space-around;
+}
+
+.price {
+    color: rgb(236, 179, 179);
+}
+
+.rating {
+    color: rgb(228, 161, 161);
+}
+
+.add-to-cart{
+    padding: 20px 10px;
+    width: 100%;
+    background-color: coral;
+}
