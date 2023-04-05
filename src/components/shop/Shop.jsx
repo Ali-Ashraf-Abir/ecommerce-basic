@@ -19,6 +19,38 @@ const Shop = () => {
     },[])
 
 
+    const [totalPrice,setTotalprice]=useState('0')
+
+
+
+    // const getTotal = (price)=>{
+
+    //     productQuantity=productQuantity+1;
+    //     productPrice=productPrice+price;
+
+    // }
+
+
+    const [cartitems,getCartItems]=useState([])
+
+
+
+ 
+    function getCart(product){
+
+
+        let newCartItems=[...cartitems,product]
+
+        localStorage.setItem('cart',newCartItems)
+
+        getCartItems(newCartItems)
+
+        console.log(newCartItems)
+    }
+
+    
+
+    
     
 
     return (
@@ -32,13 +64,16 @@ const Shop = () => {
                     
                     key={product.id}
                     product={product}
+                    getCart={getCart}
                     ></Product>)
             }
                 
             </div>
 
             <div className="cart-container">
-                <Sidecart></Sidecart>
+                <Sidecart
+                    cartitems={cartitems}
+                ></Sidecart>
             </div>
             
         </div>

@@ -5,8 +5,11 @@ import './Product.css'
 
 const Product = (props) => {
 
-    console.log(props.product)
-    const {name,seller,price,img,ratings}=props.product
+    const {id,name,seller,price,img,ratings}=props.product
+
+
+
+
 
     return (
         <div className='single-product'>
@@ -19,7 +22,7 @@ const Product = (props) => {
                 <p className='rating'>ratings: {ratings}</p>
             </div>
             <div className="">
-                <button className='add-to-cart'>Add To cart</button>
+                <button onClick={()=>props.getCart(props.product)} className='add-to-cart'>Add To cart</button>
             </div>
         </div>
     );
