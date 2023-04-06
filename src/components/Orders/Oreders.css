@@ -1,4 +1,9 @@
+.full-review-container{
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    margin-top: 10px;
 
+}
 .review-container{
 
 
@@ -11,5 +16,5 @@
 
 
 .order-cart-container{
-    
+    height: 50vh;
 }

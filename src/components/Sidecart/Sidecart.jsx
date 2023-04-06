@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './Sidecart.css'
 
-const Sidecart = ({cartitems}) => {
+const Sidecart = ({cartitems,handleClearCart}) => {
 
 
 
@@ -44,7 +44,8 @@ const Sidecart = ({cartitems}) => {
             <p>Total shipping:${totalShipping}</p>
             <p>Total tax:${tax}</p>
             <p>Grand Total:${grandTotal}</p>
-            <button className='cart-button'>See Your Proudcts</button>
+            <button onClick={handleClearCart} className='delete-cart-button'>Clear Cart</button>
+            <button  className='cart-button'>Proceed Checkout</button>
         </div>
     );
 };
