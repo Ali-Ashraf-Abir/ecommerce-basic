@@ -11,11 +11,17 @@ const Sidecart = ({cartitems}) => {
     
     let totalPrice=0
     let totalShipping=0
+    let quantity=0
 
     for(let items of cartitems){
 
-        totalPrice=totalPrice+items.price
+        if(items.quantity ===0){
+            items.quantity=1
+        }
+
+        totalPrice=totalPrice+items.price*items.quantity
         totalShipping=totalShipping+items.shipping
+        quantity=quantity+items.quantity
 
 
     }
@@ -33,7 +39,7 @@ const Sidecart = ({cartitems}) => {
     return (
         <div className='side-cart'>
             <h2>Your Cart</h2>
-            <p>Total products:${cartitems.length}</p>
+            <p>Total products:{quantity}</p>
             <p>Total product cost:${totalPrice}</p>
             <p>Total shipping:${totalShipping}</p>
             <p>Total tax:${tax}</p>
