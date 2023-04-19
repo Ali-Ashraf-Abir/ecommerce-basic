@@ -1,0 +1,56 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+
+    background-color: antiquewhite;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+
+
+}
+
+
+.form-input{
+
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    font-size: 20px;
+
+
+
+}
+
+.submit-button{
+    margin-top: 20px;
+    padding:10px 20px ;
+}
+
+form p {
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+form div {
+    margin-top: 20px;
+}
+.anchor{
+    color:blue;
+}
+
+form h2{
+    color: black;
+    font-weight: 600;
+}
+
+form small{
+    color: red;
+    margin-left: 0px;
+}
